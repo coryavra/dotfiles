@@ -18,6 +18,10 @@ echo ">> Setting global environment variables..."
 # Set the theme
 export ZSH_THEME="pentest"
 
+# Set the folder where all dotfiles are stored (this folder)
+export DOT_DIR=SCRIPT_DIR
+
+# Other various settings
 SHELL_SESSIONS_DISABLE=1
 PYTHONDONTWRITEBYTECODE=1
 

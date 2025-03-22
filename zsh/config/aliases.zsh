@@ -8,3 +8,4 @@ alias diff='diff --color=auto'
 # Useful aliases
 alias path='echo $PATH | tr ":" "\n"'
 alias speedtest='NetworkQuality'
+alias addbin='ln -s'

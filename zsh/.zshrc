@@ -41,3 +41,7 @@ if [[ -z "$ZSH_THEME" ]]; then
 fi
 printf ">> Loading theme: $ZSH_THEME...\n"
 source "$SCRIPT_DIR/themes/$ZSH_THEME.zsh-theme"
+
+# Delete variables
+unset CURRENT_SCRIPT
+unset SCRIPT_DIR

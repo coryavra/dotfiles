@@ -15,13 +15,14 @@ printf "> Sourcing file: %s -> %s\n" "${CURRENT_SCRIPT/#$HOME/~}" "${CURRENT_SCR
 # Basic environment variables (no need to export, only needed during startup)
 echo ">> Setting global environment variables..."
 
-# Set the theme
+# Set the theme, to be loaded later in .zshrc
 export ZSH_THEME="pentest"
 
-# Set the folder where all dotfiles are stored (this folder)
-export DOT_DIR=SCRIPT_DIR
-
 # Other various settings
-SHELL_SESSIONS_DISABLE=1
-PYTHONDONTWRITEBYTECODE=1
+export SHELL_SESSIONS_DISABLE=1
+export PYTHONDONTWRITEBYTECODE=1
+export LESSHISTFILE=/dev/null
 
+# Delete variables
+unset CURRENT_SCRIPT
+unset SCRIPT_DIR

@@ -1,7 +1,6 @@
 #!/bin/sh
 
-# For symlinked files, $0 is not reliable.
-# Use the special parameter to get this file's path:
+# For symlinked files, $0 is not reliable
 SCRIPT_DIR=$(cd "$(dirname "$0")" && pwd)
 
 # Create symlinks

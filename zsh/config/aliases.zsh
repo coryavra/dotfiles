@@ -1,11 +1,11 @@
 # Shell alias definitions
 
 # Colorize output
-alias ls='ls -GF' # Show color and append indicator
+alias ls='ls -GF'
 alias grep='grep --color=auto'
 alias diff='diff --color=auto'
 
-# Useful aliases
+# Utility aliases
 alias path='echo $PATH | tr ":" "\n"'
 alias speedtest='NetworkQuality'
 alias addbin='ln -s'
